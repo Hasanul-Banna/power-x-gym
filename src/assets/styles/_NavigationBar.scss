@@ -1,0 +1,19 @@
+@use "variables";
+.nav a {
+    color: white;
+    text-decoration: none;
+    &.active {
+        color: variables.$primary;
+    }
+}
+.mobile-menu-overlay {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: black;
+    z-index: 999;
+}

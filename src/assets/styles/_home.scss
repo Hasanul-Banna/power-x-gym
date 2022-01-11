@@ -1,0 +1,90 @@
+@import "./variables";
+.homeBanner {
+    position: relative;
+    overflow: hidden !important;
+    width: 100%;
+    height: 100vh;
+    video {
+        overflow: hidden !important;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    .header-text {
+        position: absolute;
+        padding-top: 9%;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        h1,
+        button {
+            font-family: "Bebas Neue", cursive;
+        }
+    }
+}
+.home-section-2 {
+    div {
+        text-align: center;
+        color: white;
+        height: 350px;
+        img {
+            height: 50px;
+        }
+        h2 {
+            font-family: "Bebas Neue", cursive;
+        }
+    }
+    .proggression {
+        background: rgba(0, 0, 0, 0.603) url("../Images/proggression.jpg") no-repeat center;
+        background-size: cover;
+        background-blend-mode: multiply;
+    }
+    .workout {
+        h2 {
+            color: $primary;
+        }
+        background: rgba(0, 0, 0, 0.603) url("../Images/workout.jpg") no-repeat center;
+        background-size: cover;
+        background-blend-mode: multiply;
+    }
+    .nutrition {
+        background: rgba(0, 0, 0, 0.603) url("../Images/nutrition.jpg") no-repeat center;
+        background-size: cover;
+        background-blend-mode: multiply;
+    }
+}
+.home-section-3 {
+    h2 {
+        font-family: "Bebas Neue", cursive;
+        &:first-child {
+            color: $primary;
+        }
+    }
+}
+.home-section-4 {
+    img {
+        height: 300px;
+    }
+    h2,
+    span,
+    p {
+        font-family: "Bebas Neue", cursive !important;
+    }
+    p {
+        position: absolute;
+        background-color: $primary;
+        bottom: 0;
+        padding: 10px;
+    }
+}
+.schedule {
+    * {
+        font-family: "Bebas Neue", cursive !important;
+    }
+}
